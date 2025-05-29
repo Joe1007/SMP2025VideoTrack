@@ -46,14 +46,15 @@ After this step, you can run `video_understanding01.ipynb`. `extract_clip_featur
 ### 4. Model
 ---
 After finishing the stpes above, you can get the features we use, so that you just excute `cluster_information_generation04.ipynb` to get the `clusters_all_types_stats_train_only_300cluster.csv`  
-**For the convinence to reproduce the results, we already put the `clusters_all_types_stats_train_only_300cluster.csv`**
-Excute `train_inference_lightgbm_5foldcrossvalidation_ensemble05.py`, and you can get the `test_prediction.csv` in `runs/lightgbm_enhanced_cv_run_{current_time_str}`. According to MAPE performance in each fold, choose the best performance `test_prediction.csv` to submit.  
+**For the convinence to reproduce the results, we already put the `clusters_all_types_stats_train_only_300cluster.csv`**  
+Excute `train_inference_lightgbm_5foldcrossvalidation_ensemble05.py`, and you can get the `test_prediction.csv` in `runs/lightgbm_enhanced_cv_run_{current_time_str}`.  
+According to MAPE performance in each fold, choose the best performance `test_prediction.csv` to submit.  
 
 ### Reminder
 
 - In this project, we do video captioning with VideoLLaMA3. It is available in the open source project. If you want to reproduce this part, please follow this repository (https://github.com/DAMO-NLP-SG/VideoLLaMA3.git) and build it from source. Make sure you have install these packages for feature extraction.
 
-- Note that the video files and feature files are too large, we didn't put it into our repository. If you want to reproduce the video captioning or video feature extraction part, please put the video files to '/raw_data/video_file'(`/raw_data/video_file/train` and `/raw_data/video_file/test`). If you want to reproduce or take a look for all the feature processing steps, please download complete file by the link we provide.  
+- Note that the video files and feature files are too large, we didn't put it into our repository. If you want to reproduce the video captioning or video feature extraction part, please put the video files to `/raw_data/video_file`(`/raw_data/video_file/train` and `/raw_data/video_file/test`). If you want to reproduce or take a look for all the feature processing steps, please download complete file by the link we provide.
 
 #### Environments
 - PC: i9-9900K, 32GB Memory, Nvidia 3090 Ti.
