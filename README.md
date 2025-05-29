@@ -1,39 +1,47 @@
-## NCKU_ACVLAB-SMPChallenge2024
+# NCKU_ACVLAB-SMPChallenge2025
 
 
-### Brief Introduction 
+## Brief Introduction & Quick Demo
 
-This repository is the code of our **team [NCKU_ACVLAB]** used in SMP Challenge 2024 (http://smp-challenge.com/).
+This repository is the code of our **team [NCKU_ACVLAB]** used in SMP Challenge 2025 (http://smp-challenge.com/).
 
 We provide all the processed features and necessary codes in this repository.
 
-If you like to directly make the prediction of popularity scores, just clone this repository, jump to step 4 and execute R09 after downloading these necessary features by **this link: https://drive.google.com/file/d/1SS2ABr02F-oXXmzXxxTcs-nqvuf5QbVI/view**
+If you like to directly make the prediction of popularity scores, just clone this repository, and follow the command step by step:  
+- Access **this link: https://drive.google.com/drive/u/0/folders/1Equ7FkiCf0NKg2lp4mK8mHN5OjRKVMoD**
+- Download the .json files in `Caption_feature`, and put these files in `/feature_processing/caption_feature`
+- Download the .zip files in `Video_feature`, then put and unzip these files in `/feature_processing/video_feature`
+- Download the .zip files in `Audio_feature`, then put and unzip these files in `/feature_processing/audio_feature`
+- Excute the `train_inference_lightgbm_5foldcrossvalidation_ensemble05.py` directly, and you can get the `submission.csv` with the best performance we choose
 
-Besides, there is the data/features and checkpoints for experiment analysis in our technical report: **this link: https://drive.google.com/drive/folders/1yaIceuQBOSv4MVrQQUi0RGnyZHGJYB1I?usp=sharing**
+## Detailed Instruction
 
-### Instruction
 If you aim to reproduce the whole experiment, please run the code with the following instruction:
 
-1. Based on our previous work, we take the processed features used last year as our baseline. Therefore, the code should be run from R01 to R08 at first, and all the processed features in 'data_2023/train' and 'data_2023/test' would be produced.
+### 1. Data Preprocessing
+---
+We put the original dataset in the folder `/raw_data`, and you just use `xxx.py` to get the cleaned dataset at `/processed_data`.  
+**For the convinence to reproduce the results, we already put the cleaned dataset in the  `/processed_data` folder.**
 
-For step 2 and 3, we also provide the processed features in 'train/'. If you want to reproduce, please follow step 2 and 3. The processed features are also provide here for download:  
+### 2. Feature Engineering
+---
+Based on the framework we designed, we need to generate and extract the features from videos. Therefore, the codes in folder `/feature_processing` should be run at first. Before running the codes, please use 
 
-2. This year we adopt more feature extraction methods. To get these features, please run the following code step by step:
-   
-    2.1. run the python file from 1.py to 13.py
-   
-    2.2. run BLIP_multimodality_feature/python files from 1.py to 12.py (need to modify output path)
-   
-3. We also crawled some new features by pathalias. The code is available in 'new_feature_crawler_by_pathalias.py'. Execute to crawl the external data. Also, the organized data is in 'train/new_features.pkl'.
+`git clone https://github.com/DAMO-NLP-SG/VideoLLaMA3.git`  
 
-4. With the above steps, we have already finished processing data and features. Run R09 to start training and inference! The result file would be output to **'submission.json'**. As our model is ensembled by lightgbm and tabnet in ratio of 7:3, we also output the result file of these two model, respectively.
+first to download the model, and put `VideoLLaMA3-7B` at folder `/feature_processing`  
 
-#### Experiment in tech-reports
+After this step, you can run `video_understanding01.ipynb`. `extract_clip_features02.py`, `audio_features03.py` in order, and get the features in `/caption_feature`, `/video_feature`, `/audio_feature` in each folder.
+
+
+#### 3. Model
+---
+After finishing the stpes above, you can get the features we use, so that you just excute `cluster_information_generation04.ipynb` and can get the .csv file
 
 - We design the model based on **https://github.com/Daisy-zzz/CPDN** (top-1 performance at SMPD2023), and the identity-isolated split is employed.
 - We consider the data-splitting strategy used in 2022/2023 (ML-based approaches) may be uncompatible to CSPN-Net (Timeseries-aware multi-modal model for social media popularity prediction), we will discuss it in our tech-report.
 
-#### Reminder
+#### Note
 - For the part of features same as last year:
 We provided the two kinds of the extracted image features which are stored in *.csv format: image captioning and image 
 semantic feature. Image captioning information can be extracted by executing R_04 (under tensorflow 2.0). Image semantic feature is extracted by adopting the open source project - TF_FeatureExtraction (https://github.com/tomrunia/TF_FeatureExtraction) on each image.
