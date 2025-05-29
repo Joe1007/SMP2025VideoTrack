@@ -18,7 +18,7 @@ If you like to directly make the prediction of popularity scores, just clone thi
 
 If you aim to reproduce the whole experiment, please run the code with the following instruction:
 
-### 1. Environment Setop
+### 1. Environment Setup
 ---
 Use the command as below:  
 `conda create -n SMPVideo python=3.10.16`  
@@ -30,7 +30,7 @@ You get the virtual enviroment and packages we use
 ### 2. Data Preprocessing
 ---
 We put the original dataset in the folder `/raw_data`, and you just use `xxx.py` to get the cleaned dataset at `/processed_data`.  
-**For the convinence to reproduce the results, we already put the cleaned dataset in the  `/processed_data` folder.**
+**(For the convinence to reproduce the results, we already put the cleaned dataset in the  `/processed_data` folder.)**
 
 ### 3. Feature Engineering
 ---
@@ -46,7 +46,8 @@ After this step, you can run `video_understanding01.ipynb`. `extract_clip_featur
 ### 4. Model
 ---
 After finishing the stpes above, you can get the features we use, so that you just excute `cluster_information_generation04.ipynb` to get the `clusters_all_types_stats_train_only_300cluster.csv`  
-**For the convinence to reproduce the results, we already put the `clusters_all_types_stats_train_only_300cluster.csv`**  
+**(For the convinence to reproduce the results, we already put the `clusters_all_types_stats_train_only_300cluster.csv`)**  
+
 Excute `train_inference_lightgbm_5foldcrossvalidation_ensemble05.py`, and you can get the `test_prediction.csv` in `runs/lightgbm_enhanced_cv_run_{current_time_str}`.  
 According to MAPE performance in each fold, choose the best performance `test_prediction.csv` to submit.  
 
