@@ -1,9 +1,9 @@
-# NCKU_ACVLAB-SMPChallenge2025
+# ACVLAB-SMPChallenge2025
 
 
 ## Brief Introduction & Quick Demo
 
-This repository is the code of our **team [NCKU_ACVLAB]** used in SMP Challenge 2025 (http://smp-challenge.com/).
+This repository is the code of our **team [ACVLAB]** used in SMP Challenge 2025 (http://smp-challenge.com/).
 
 We provide all the processed features and necessary codes in this repository.
 
@@ -64,19 +64,19 @@ According to MAPE performance in each fold, choose the best performance `test_pr
 
 #### Copyright
 - Author: Chih-Chung Hsu
-e-mail: cchsu@gs.ncku.edu.tw
+e-mail: chihchung@nycu.edu.tw
 
 - Author: Chia-Ming Lee
 e-mail: zuw408421476@gmail.com
 
-- Author: Yu-Fan Lin
-e-mail: aas12as12as12tw@gmail.com
+- Author: Bo-Cheng Qiu
+e-mail: a36492183@gmail.com
 
-- Author: Yi-Shiuan Chou
-e-mail: nelly910421@gmail.com
+- Author: Cheng-Jun Kang
+e-mail: cjkang0601@gmail.com
 
-- Author: Chih-Yu Jian
-e-mail: ru0354m3@gmail.com
+- Author: I-Hsuan Wu
+e-mail: wuhsuan02@gmail.com
 
-- Author: Chi-Han Tsai
-e-mail: fateplsf567@gmail.com
+- Author: TBD
+e-mail: TBD@gmail.com
