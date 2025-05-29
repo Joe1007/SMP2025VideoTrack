@@ -46,7 +46,7 @@ semantic feature. Image captioning information can be extracted by executing R_0
 
 - In this project, we do video captioning with VideoLLaMA3. It is available in the open source project. If you want to reproduce this part, please follow this repository (https://github.com/DAMO-NLP-SG/VideoLLaMA3.git) and build it from source. Make sure you have install these packages for feature extraction.
 
-- Note that the video files and feature files are too large, we didn't put it into our repository. If you want to reproduce the video captioning or video feature extraction part, please put the video files to ''('imgs/train' and 'imgs/test'). If you want to reproduce or take a look for all the feature processing steps, please download complete file by this link:  
+- Note that the video files and feature files are too large, we didn't put it into our repository. If you want to reproduce the video captioning or video feature extraction part, please put the video files to '/raw_data/video_file'(`/raw_data/video_file/train` and `/raw_data/video_file/test`). If you want to reproduce or take a look for all the feature processing steps, please download complete file by the link we provide.  
 
 #### Environments
 - PC:  i9-9900K, 32GB Memory, Nvidia 3090 Ti.
