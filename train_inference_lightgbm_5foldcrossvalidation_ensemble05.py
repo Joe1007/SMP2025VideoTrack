@@ -42,22 +42,22 @@ AUDIO_FEAT_DIM = None
 
 # --- Data Paths (Updated to latest paths) ---
 # Training Data Paths
-TRAIN_MAIN_DATA_PATH = "/ssd3/chunlin/smp_video_2025/train_data_combined/cleaned_data.json"
-TRAIN_CAPTION_V4_PATH = "/ssd3/cheng/SMP2025/caption_shortcaption.json"
-TRAIN_CAPTION_V3_PATH = "/ssd3/cheng/SMP2025/caption_category.json"
-TRAIN_CAPTION_TARGET_PATH = "/ssd3/cheng/SMP2025/caption_target.json"
-TRAIN_VISION_FEAT_DIR_BASE = "/ssd3/hsuan/SMP-Video/features256_vitL/train"
-TRAIN_AUDIO_FEAT_DIR_BASE = "/ssd3/hsuan/SMP-Video/audio_feature/train"
-PRECOMPUTED_CLUSTER_TRAIN_DATA_PATH = "/ssd3/cheng/SMP2025/cheng_model/clusters_all_types_stats_train_only_300cluster.csv"
+TRAIN_MAIN_DATA_PATH = "./processed_data/train_cleaned_data.json"
+TRAIN_CAPTION_V4_PATH = "./feature_processing/caption_feature/caption_shortcaption.json"
+TRAIN_CAPTION_V3_PATH = "./feature_processing/caption_feature/caption_category.json"
+TRAIN_CAPTION_TARGET_PATH = "./feature_processing/caption_feature/caption_target.json"
+TRAIN_VISION_FEAT_DIR_BASE = "./feature_processing/video_feature/train"
+TRAIN_AUDIO_FEAT_DIR_BASE = "./feature_processing/audio_feature/train"
+PRECOMPUTED_CLUSTER_TRAIN_DATA_PATH = "./clusters_all_types_stats_train_only_300cluster.csv"
 
 # Test Data Paths
-TEST_MAIN_DATA_PATH = "/ssd3/chunlin/smp_video_2025/test_data_combined/cleaned_data.json"
-TEST_CAPTION_V4_PATH = "/ssd3/cheng/SMP2025/captionQ4_test.json"
-TEST_CAPTION_V3_PATH = "/ssd3/cheng/SMP2025/captionQ3_test.json"
-TEST_CAPTION_Q6_PATH = "/ssd3/cheng/SMP2025/captionQ6_test.json"
-TEST_VISION_FEAT_DIR_BASE = "/ssd3/hsuan/SMP-Video/features256_vitL/test"
-TEST_AUDIO_FEAT_DIR_BASE = "/ssd3/hsuan/SMP-Video/audio_feature/test"
-PRECOMPUTED_CLUSTER_TEST_DATA_PATH = "/ssd3/cheng/SMP2025/cheng_model/clusters_all_types_stats_train_only_300cluster.csv"
+TEST_MAIN_DATA_PATH = "./processed_data/test_cleaned_data.json"
+TEST_CAPTION_V4_PATH = "./feature_processing/caption_feature/captionQ4_test.json"
+TEST_CAPTION_V3_PATH = "./feature_processing/caption_feature/captionQ3_test.json"
+TEST_CAPTION_Q6_PATH = "./feature_processing/caption_feature/captionQ6_test.json"
+TEST_VISION_FEAT_DIR_BASE = "./feature_processing/video_feature/test"
+TEST_AUDIO_FEAT_DIR_BASE = "./feature_processing/audio_feature/test"
+PRECOMPUTED_CLUSTER_TEST_DATA_PATH = "./clusters_all_types_stats_train_only_300cluster.csv"
 
 # --- Setup Output Directory and Logging ---
 current_time_str = time.strftime("%Y%m%d_%H%M%S")
