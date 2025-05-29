@@ -50,8 +50,8 @@ semantic feature. Image captioning information can be extracted by executing R_0
 
 #### Environments
 - PC:  i9-9900K, 32GB Memory, Nvidia 3090 Ti.
-- OS: Ubuntu 18.04.6 LTS (Bionic Beaver), cuda 11.0
-- Software & Libs: Anaconda with python 3.7, Tensorflow 1.12, Tensorflow 2.0 (captioning), pytorch, sklearn, gensim, pandas, lightgbm, and pytorch-tabnet. **You can setup environment with 'requirements.txt'.**
+- OS: Ubuntu 18.04.6 LTS (Bionic Beaver), cuda 11.5
+- Software & Libs: Anaconda with python 3.10.16, **You can setup environment with 'requirements.txt'.**
 
 #### Copyright
 - Author: Chih-Chung Hsu
