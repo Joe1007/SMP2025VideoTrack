@@ -9,9 +9,9 @@ We provide all the processed features and necessary codes in this repository.
 
 If you like to directly make the prediction of popularity scores, just clone this repository, and follow the command step by step:  
 - Access **this link: https://drive.google.com/drive/u/0/folders/1Equ7FkiCf0NKg2lp4mK8mHN5OjRKVMoD**
-- Download the .json files in `Caption_feature`, and put these files in `/feature_processing/caption_feature`
-- Download the .zip files in `Video_feature`, then put and unzip these files in `/feature_processing/video_feature`
-- Download the .zip files in `Audio_feature`, then put and unzip these files in `/feature_processing/audio_feature`
+- Download the .json files in `Caption_feature`, and put these files in `/feature_processing/caption_feature`(Remember use command `mkdir caption_feature` under folder `/feature_processing` first)
+- Download the .zip files in `Video_feature`, then put and unzip these files in `/feature_processing/video_feature`(Remember use command `mkdir video_feature` under folder `/feature_processing` first)
+- Download the .zip files in `Audio_feature`, then put and unzip these files in `/feature_processing/audio_feature`(Remember use command `mkdir audio_feature` under folder `/feature_processing` first)
 - Excute the `train_inference_lightgbm_5foldcrossvalidation_ensemble05.py` directly, and you can get the `submission.csv` with the best performance we choose
 
 ## Detailed Instruction
