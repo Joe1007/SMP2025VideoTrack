@@ -3,7 +3,7 @@
 
 ## Brief Introduction & Quick Demo
 
-This repository is the code of our **team [ACVLAB](Teamname:Devil)** used in SMP Challenge 2025 (http://smp-challenge.com/).
+This repository is the code of our **team [ACVLAB]**(Teamname:Devil) used in SMP Challenge 2025 (http://smp-challenge.com/).
 
 We provide all the processed features and necessary codes in this repository.
 
@@ -13,7 +13,7 @@ If you like to directly make the prediction of popularity scores, just clone thi
 - Download the .json files in `Caption_feature`, and put these files in `/feature_processing/caption_feature`(Remember use command `mkdir caption_feature` to create folder `caption_feature` under folder `/feature_processing` first)
 - Download the .zip files in `Video_feature`, then put and unzip these files in `/feature_processing/video_feature`(Remember use command `mkdir video_feature` to create folder `video_feature` under folder `/feature_processing` first)
 - Download the .zip files in `Audio_feature`, then put and unzip these files in `/feature_processing/audio_feature`(Remember use command `mkdir audio_feature` to create folder `audio_feature` under folder `/feature_processing` first)
-- Excute the `train_inference_lightgbm_5foldcrossvalidation_ensemble05.py` directly, then you can get the `test_predictions_fold_{i}.csv`(i=1,2,...,5) in `runs` folder and choose the best performance file. 
+- Excute the `python train_inference_lightgbm_5foldcrossvalidation_ensemble05.py` directly, then you can get the `test_predictions_fold_{i}.csv`(i=1,2,...,5) in `runs` folder and choose the best performance file. 
 
 ## Detailed Instruction
 
