@@ -1,9 +1,9 @@
-# ACVLAB-SMPChallenge2025(Teamname:Devil)
+# ACVLAB-SMPChallenge2025(Teamname:Devil, yjsk)
 
 
 ## Brief Introduction & Quick Demo
 
-This repository is the code of our **team [ACVLAB]**(Teamname:Devil) used in SMP Challenge 2025 (http://smp-challenge.com/).
+This repository is the code of our **lab [ACVLAB]**(Teamname:Devil, yjsk) used in SMP Challenge 2025 (http://smp-challenge.com/).
 
 We provide all the processed features and necessary codes in this repository.
 
