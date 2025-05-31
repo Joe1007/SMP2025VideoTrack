@@ -1,4 +1,4 @@
-# ACVLAB-SMPChallenge2025(Teamname:Devil)
+# ACVLAB-SMP Challenge2025(Teamname:Devil)
 
 
 ## Brief Introduction & Quick Demo
