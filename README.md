@@ -30,7 +30,7 @@ You can get the virtual enviroment and packages we use
 
 ### 2. Data Preprocessing
 ---
-We put the original dataset in the folder `/raw_data`, and you alreadly can get the cleaned dataset at `/processed_data`.  
+We put the original dataset in the folder `/raw_data`, and you can access `/processed_data` folder to use `python clean_data.py`to get the cleaned dataset we use.  
 **(For the convinence to reproduce the results, we already put the cleaned dataset in the `/processed_data` folder.)**  
 
 Download and put the video files in `/raw_data/video_file`
